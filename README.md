@@ -60,7 +60,7 @@ Micronaut features integration with both Zipkin and Jaeger (via the Open Tracing
     - ![6](https://user-images.githubusercontent.com/85616604/196155163-fa18ebf4-4ae2-4ef3-bcc9-5c8fee6f6285.png)
 
 ## Note
-    - IF you see io.jaegertracing.internal.exceptions.SenderException: Failed to flush spans. then open terminal and remove the container via following           cmd
+     IF you see this error io.jaegertracing.internal.exceptions.SenderException: Failed to flush spans, in your console while navigating Jaeger UI. Then open terminal and remove the container via following cmd
         docker stop <Container_ID>
         docker rm <Container_ID>
 
