@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: itemCatalogue
+endpoints:
+  health:
+    enabled: true
+    sensitive: false
+#tag::jaeger[]
+tracing:
+  jaeger:
+    enabled: true
+    sampler:
+      probability: 1.0 # <1>
+#end::jaeger[]
