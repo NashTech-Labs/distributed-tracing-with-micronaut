@@ -30,7 +30,7 @@ Micronaut features integration with both Zipkin and Jaeger (via the Open Tracing
   -p 9411:9411 \
   jaegertracing/all-in-one:latest
 
-## How to run the start the project?
+## How to run the project?
 
 - Run itemCatalogue microservice.
     - gradle run
@@ -55,8 +55,13 @@ Micronaut features integration with both Zipkin and Jaeger (via the Open Tracing
     - ![1 3](https://user-images.githubusercontent.com/85616604/196145983-f7717d84-bdd0-4511-9106-18119724b554.png)
 
 - You can then navigate to http://localhost:16686 to access the Jaeger UI.
-- ![Screenshot from 2022-10-17 15-59-34](https://user-images.githubusercontent.com/85616604/196155375-4e577319-6fcb-4c9b-ad6a-c714274004ed.png)
+    - ![Screenshot from 2022-10-17 15-59-34](https://user-images.githubusercontent.com/85616604/196155375-4e577319-6fcb-4c9b-ad6a-c714274004ed.png)
 
-- ![6](https://user-images.githubusercontent.com/85616604/196155163-fa18ebf4-4ae2-4ef3-bcc9-5c8fee6f6285.png)
+    - ![6](https://user-images.githubusercontent.com/85616604/196155163-fa18ebf4-4ae2-4ef3-bcc9-5c8fee6f6285.png)
+
+## Note
+    - IF you see io.jaegertracing.internal.exceptions.SenderException: Failed to flush spans. then open terminal and remove the container via following           cmd
+        docker stop <Container_ID>
+        docker rm <Container_ID>
 
 
